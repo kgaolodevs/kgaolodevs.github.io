@@ -1,0 +1,47 @@
+#all files starting with . or ~
+.*
+~*
+
+#node/grunt dependency directories
+node_modules/
+
+#log files and databases
+*.log
+*.sql
+*.sqlite
+
+#compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+#packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+#private/secret files
+*.der
+*.key
+*.pem
+
+#SASS
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# -------------------------
+# BEGIN Whitelisted Files
+# -------------------------
+
+# track these files, if they exist
+!.gitignore
