@@ -139,4 +139,18 @@ body img {
     --font-regular: 1rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: var(--header-height);
+    right: 0;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+}
 /*# sourceMappingURL=style.css.map */
