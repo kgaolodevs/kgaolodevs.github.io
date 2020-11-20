@@ -117,12 +117,40 @@ body img {
           box-shadow: 0 0.5rem 2rem rgba(146, 161, 176, 0.15);
 }
 
+.site .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: var(--header-height);
+  font-weight: var(--font-mid);
+}
+
 /* ////////// MEDIA QUERIES /////////// */
 @media screen and (min-width: 768px) {
   :root {
     --font-large: 3.5rem;
     --h2-font-size: 2rem;
     --font-regular: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: var(--header-height);
+    right: 0;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
 }
 /*# sourceMappingURL=style.css.map */
