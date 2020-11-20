@@ -63,8 +63,12 @@ body img {
      object-fit: cover;
 }
 
-/* ////////// PRIMARY CLASSES /////////// */
-.section-title {
+.site {
+  /* ////////// PRIMARY CLASSES /////////// */
+  /* ////////// SITE LAYOUT /////////// */
+}
+
+.site .section-title {
   position: relative;
   font-size: var(--h2-font-size);
   text-align: center;
@@ -73,7 +77,7 @@ body img {
   margin-bottom: var(--m4);
 }
 
-.section-title::after {
+.site .section-title::after {
   position: absolute;
   content: "";
   width: 64px;
@@ -85,13 +89,12 @@ body img {
   background-color: var(--primary-color);
 }
 
-.section {
+.site .section {
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
 
-/* ////////// SITE LAYOUT /////////// */
-.grid {
+.site .grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
@@ -103,7 +106,7 @@ body img {
   margin: 0 var(--m2) 0 var(--m2);
 }
 
-.header {
+.site .header {
   width: 100%;
   position: fixed;
   top: 0;
