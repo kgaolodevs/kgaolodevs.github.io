@@ -90,6 +90,30 @@ body img {
   padding-bottom: 2rem;
 }
 
+/* ////////// SITE LAYOUT /////////// */
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  max-width: 1024px;
+  width: calc(100% - 2rem);
+  margin: 0 var(--m2) 0 var(--m2);
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0.5rem 2rem rgba(146, 161, 176, 0.15);
+          box-shadow: 0 0.5rem 2rem rgba(146, 161, 176, 0.15);
+}
+
 /* ////////// MEDIA QUERIES /////////// */
 @media screen and (min-width: 768px) {
   :root {
