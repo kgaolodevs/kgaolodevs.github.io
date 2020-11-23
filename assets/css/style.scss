@@ -195,6 +195,14 @@ body {
         color: var(--primary-color);
       }
     }
+
+    &__profileImage {
+      width: 22.5rem;
+      align-self: flex-end;
+      img {
+        border-radius: 50%;
+      }
+    }
   }
 }
 
