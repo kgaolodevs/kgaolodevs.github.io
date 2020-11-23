@@ -183,6 +183,19 @@ body {
         color: var(--primary-color);
         margin-bottom: var(--m2);
       }
+
+      &--button {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: #ffffff;
+        padding: 0.75rem 2.5rem;
+        font-weight: var(--font-mid);
+        border-radius: 0.5rem;
+
+        &:hover {
+          box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.15);
+        }
+      }
     }
 
     &__socials--icon {
