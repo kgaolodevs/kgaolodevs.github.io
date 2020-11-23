@@ -167,6 +167,35 @@ body {
   .show {
     right: 0;
   }
+
+  .home {
+    height: calc(100vh - 3rem);
+    row-gap: 1rem;
+
+    &__content {
+      align-self: center;
+
+      &--title {
+        font-size: var(--font-large);
+      }
+
+      &--subtitle {
+        color: var(--primary-color);
+        margin-bottom: var(--m2);
+      }
+    }
+
+    &__socials--icon {
+      width: max-content;
+      margin-bottom: var(--m2);
+      font-size: 1.4rem;
+      color: var(--secondary-color);
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
 }
 
 /* ////////// MEDIA QUERIES /////////// */
