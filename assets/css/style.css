@@ -235,6 +235,11 @@ body img {
   border-radius: 50%;
 }
 
+.site .about__container {
+  row-gap: 2rem;
+  text-align: center;
+}
+
 /* ////////// MEDIA QUERIES /////////// */
 @media screen and (min-width: 768px) {
   :root {

@@ -217,6 +217,13 @@ body {
       }
     }
   }
+
+  .about {
+    &__container {
+      row-gap: 2rem;
+      text-align: center;
+    }
+  }
 }
 
 /* ////////// MEDIA QUERIES /////////// */
