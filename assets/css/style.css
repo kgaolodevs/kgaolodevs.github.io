@@ -178,6 +178,63 @@ body img {
   right: 0;
 }
 
+.site .home {
+  height: calc(100vh - 3rem);
+  row-gap: 1rem;
+}
+
+.site .home__content {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.site .home__content--title {
+  font-size: var(--font-large);
+}
+
+.site .home__content--subtitle {
+  color: var(--primary-color);
+  margin-bottom: var(--m2);
+}
+
+.site .home__content--button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 0.75rem 2.5rem;
+  font-weight: var(--font-mid);
+  border-radius: 0.5rem;
+}
+
+.site .home__content--button:hover {
+  -webkit-box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.site .home__socials--icon {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: var(--m2);
+  font-size: 1.4rem;
+  color: var(--secondary-color);
+}
+
+.site .home__socials--icon:hover {
+  color: var(--primary-color);
+}
+
+.site .home__profileImage {
+  width: 22.5rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.site .home__profileImage img {
+  border-radius: 50%;
+}
+
 /* ////////// MEDIA QUERIES /////////// */
 @media screen and (min-width: 768px) {
   :root {
