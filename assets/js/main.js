@@ -1,11 +1,12 @@
 /* ////////// OPEN MENU /////////// */
 const openMenu = (navIcon, navMenu) => {
   const menuIcon = document.getElementById(navIcon),
-    navMenu = document.getElementById(navMenu);
+    nav = document.getElementById(navMenu);
 
-  if (menuIcon && navMenu) {
+  if (menuIcon && nav) {
     menuIcon.addEventListener("click", () => {
-      navMenu.classList.toggle("show");
+      nav.classList.toggle("show");
     });
   }
 };
+openMenu("nav-icon", "nav-menu");

@@ -163,6 +163,10 @@ body {
     top: 2rem;
     background-color: var(--primary-color);
   }
+
+  .show {
+    right: 0;
+  }
 }
 
 /* ////////// MEDIA QUERIES /////////// */
@@ -178,7 +182,7 @@ body {
   .nav__menu {
     position: fixed;
     top: var(--header-height);
-    right: 0;
+    right: -100%;
     width: 80%;
     height: 100%;
     padding: 2rem;
