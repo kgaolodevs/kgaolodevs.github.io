@@ -448,6 +448,15 @@ body img {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .site .home__content--title {
+    font-size: 3rem;
+  }
+  .site .home__content--subtitle {
+    font-size: 1.4rem;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .site .home__content--subtitle {
     color: var(--primary-color);

@@ -425,6 +425,22 @@ body {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .site {
+    .home {
+      &__content {
+        &--title {
+          font-size: 3rem;
+        }
+
+        &--subtitle {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 960px) {
   .site {
     .home {
