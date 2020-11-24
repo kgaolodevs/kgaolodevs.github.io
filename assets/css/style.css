@@ -105,7 +105,6 @@ body img {
       grid-template-columns: 100%;
   -webkit-column-gap: 2rem;
           column-gap: 2rem;
-  max-width: 1024px;
   width: calc(100% - 2rem);
   margin: 0 var(--m2) 0 var(--m2);
 }
@@ -313,6 +312,7 @@ body img {
 
 .site .contact__link {
   padding-bottom: var(--m1);
+  color: var(--primary-color);
 }
 
 .site .footer {
@@ -342,6 +342,95 @@ body img {
     --font-large: 3.5rem;
     --h2-font-size: 2rem;
     --font-regular: 1rem;
+  }
+  body {
+    margin: 0;
+  }
+  .site .section {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+  .site .section-title {
+    margin-bottom: var(--m6);
+  }
+  .site .section-title::after {
+    width: 80px;
+    top: 3rem;
+  }
+  .site .nav {
+    height: calc(var(--header-height) + 1rem);
+  }
+  .site .nav__menu--list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0;
+  }
+  .site .nav__menu--item {
+    margin-left: var(--m6);
+    margin-bottom: 0;
+  }
+  .site .nav__menu--link {
+    color: var(--secondary-color);
+  }
+  .site .nav__menu--icon {
+    display: none;
+  }
+  .site .home {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .site .home__content {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .site .home__content--subtitle {
+    font-size: 1.6rem;
+  }
+  .site .home__content--button {
+    margin-top: 2rem;
+  }
+  .site .home__profileImage {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 30rem;
+  }
+  .site .skills__container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: initial;
+  }
+  .site .projects__container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+  .site .contact__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 4rem 0 2rem 0;
   }
 }
 
