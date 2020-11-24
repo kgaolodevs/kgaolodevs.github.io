@@ -313,6 +313,18 @@ body {
 }
 
 /* ////////// MEDIA QUERIES /////////// */
+@media screen and (max-width: 440px) {
+  .site {
+    .home {
+      &__content {
+        &--title {
+          font-size: 2.2rem !important;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   :root {
     --font-large: 3.5rem;
