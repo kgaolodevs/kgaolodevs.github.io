@@ -102,7 +102,7 @@ body {
     display: grid;
     grid-template-columns: 100%;
     column-gap: 2rem;
-    max-width: 1024px;
+    // max-width: 1024px;
     width: calc(100% - 2rem);
     margin: 0 var(--m2) 0 var(--m2);
   }
@@ -357,6 +357,30 @@ body {
 
       &__menu--icon {
         display: none;
+      }
+    }
+
+    .home {
+      height: 100vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      &__content {
+        align-self: center;
+
+        &--subtitle {
+          font-size: 1.6rem;
+        }
+
+        &--button {
+          margin-top: 2rem;
+        }
+      }
+
+      &__profileImage {
+        align-self: center;
+        width: 30rem;
       }
     }
   }
