@@ -216,19 +216,6 @@ body img {
           box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-.site .home__socials--icon {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin-bottom: var(--m2);
-  font-size: 1.4rem;
-  color: var(--secondary-color);
-}
-
-.site .home__socials--icon:hover {
-  color: var(--primary-color);
-}
-
 .site .home__profileImage {
   width: 22.5rem;
   -ms-flex-item-align: end;
@@ -297,6 +284,35 @@ body img {
 .site .projects__project--img img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.site .contact__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.site .contact__socials--icon {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1.4rem;
+  color: var(--secondary-color);
+  margin-right: var(--m1);
+}
+
+.site .contact__socials--icon:hover {
+  color: var(--primary-color);
+}
+
+.site .contact__link {
+  padding-bottom: var(--m1);
 }
 
 /* ////////// MEDIA QUERIES /////////// */

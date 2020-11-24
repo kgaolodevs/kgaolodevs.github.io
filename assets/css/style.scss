@@ -202,17 +202,6 @@ body {
       }
     }
 
-    &__socials--icon {
-      width: max-content;
-      margin-bottom: var(--m2);
-      font-size: 1.4rem;
-      color: var(--secondary-color);
-
-      &:hover {
-        color: var(--primary-color);
-      }
-    }
-
     &__profileImage {
       width: 22.5rem;
       align-self: flex-end;
@@ -274,6 +263,29 @@ body {
           transform: scale(1.1);
         }
       }
+    }
+  }
+
+  .contact {
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__socials--icon {
+      width: max-content;
+      font-size: 1.4rem;
+      color: var(--secondary-color);
+      margin-right: var(--m1);
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+
+    &__link {
+      padding-bottom: var(--m1);
     }
   }
 }
