@@ -447,4 +447,18 @@ body img {
     transition: 0.5s;
   }
 }
+
+@media screen and (max-width: 960px) {
+  .site .home__content--subtitle {
+    color: var(--primary-color);
+    margin-bottom: var(--m1);
+  }
+  .site .home__content--button {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .site .home__profileImage {
+    width: 20rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

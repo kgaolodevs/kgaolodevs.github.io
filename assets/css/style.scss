@@ -424,3 +424,24 @@ body {
     transition: 0.5s;
   }
 }
+
+@media screen and (max-width: 960px) {
+  .site {
+    .home {
+      &__content {
+        &--subtitle {
+          color: var(--primary-color);
+          margin-bottom: var(--m1);
+        }
+
+        &--button {
+          transform: scale(0.9);
+        }
+      }
+
+      &__profileImage {
+        width: 20rem;
+      }
+    }
+  }
+}
