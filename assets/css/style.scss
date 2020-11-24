@@ -384,12 +384,19 @@ body {
       }
     }
 
-    .about,
     .skills {
       &__container {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         text-align: initial;
+      }
+    }
+
+    .projects {
+      &__container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 2rem;
       }
     }
   }
