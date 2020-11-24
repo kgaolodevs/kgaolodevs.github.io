@@ -253,6 +253,29 @@ body {
       }
     }
   }
+
+  .projects {
+    text-align: center;
+
+    &__container {
+      row-gap: 2rem;
+    }
+
+    &__project--img {
+      box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+      border-radius: 0.5rem;
+      overflow: hidden;
+
+      img {
+        transition: 1s;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
 }
 
 /* ////////// MEDIA QUERIES /////////// */

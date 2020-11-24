@@ -273,6 +273,32 @@ body img {
   margin-right: var(--m2);
 }
 
+.site .projects {
+  text-align: center;
+}
+
+.site .projects__container {
+  row-gap: 2rem;
+}
+
+.site .projects__project--img {
+  -webkit-box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+          box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.site .projects__project--img img {
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.site .projects__project--img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 /* ////////// MEDIA QUERIES /////////// */
 @media screen and (min-width: 768px) {
   :root {
