@@ -276,7 +276,8 @@ body img {
 .site .projects__project--img {
   -webkit-box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.4);
-  border-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
   overflow: hidden;
 }
 
@@ -289,6 +290,40 @@ body img {
 .site .projects__project--img img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.site .projects__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+
+.site .projects__buttons--btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: none;
+  padding: 1rem 0;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-weight: bolder;
+  font-size: 0.75rem;
+}
+
+.site .projects__buttons--demo {
+  border-bottom-left-radius: 0.5rem;
+}
+
+.site .projects__buttons--code {
+  border-left: var(--white-color) solid 1px;
+  border-right: var(--white-color) solid 1px;
+}
+
+.site .projects__buttons--info {
+  border-bottom-right-radius: 0.5rem;
 }
 
 .site .contact__content {
@@ -455,9 +490,13 @@ body img {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--white-color);
+    background-color: var(--secondary-dark);
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    -webkit-box-shadow: 0 0.5rem 0.8rem rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0.5rem 0.8rem rgba(255, 255, 255, 0.1);
   }
   .site .home {
     display: -webkit-box;
