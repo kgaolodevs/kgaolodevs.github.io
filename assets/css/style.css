@@ -337,6 +337,12 @@ body img {
 }
 
 /* ////////// MEDIA QUERIES /////////// */
+@media screen and (max-width: 440px) {
+  .site .home__content--title {
+    font-size: 2.2rem !important;
+  }
+}
+
 @media screen and (min-width: 768px) {
   :root {
     --font-large: 3.5rem;
@@ -434,7 +440,7 @@ body img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
     top: var(--header-height);
@@ -445,6 +451,64 @@ body img {
     background-color: var(--secondary-color);
     -webkit-transition: 0.5s;
     transition: 0.5s;
+  }
+  .site .home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .site .home__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .site .home__profileImage {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .site .home__content--title {
+    font-size: 3rem;
+  }
+  .site .home__content--subtitle {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .site .home__content--subtitle {
+    color: var(--primary-color);
+    margin-bottom: var(--m1);
+  }
+  .site .home__content--button {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .site .home__profileImage {
+    width: 20rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

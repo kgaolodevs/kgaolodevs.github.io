@@ -313,6 +313,18 @@ body {
 }
 
 /* ////////// MEDIA QUERIES /////////// */
+@media screen and (max-width: 440px) {
+  .site {
+    .home {
+      &__content {
+        &--title {
+          font-size: 2.2rem !important;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   :root {
     --font-large: 3.5rem;
@@ -412,7 +424,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
     top: var(--header-height);
@@ -422,5 +434,62 @@ body {
     padding: 2rem;
     background-color: var(--secondary-color);
     transition: 0.5s;
+  }
+
+  .site {
+    .home {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &__profileImage {
+        align-self: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .site {
+    .home {
+      &__content {
+        &--title {
+          font-size: 3rem;
+        }
+
+        &--subtitle {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .site {
+    .home {
+      &__content {
+        &--subtitle {
+          color: var(--primary-color);
+          margin-bottom: var(--m1);
+        }
+
+        &--button {
+          transform: scale(0.9);
+        }
+      }
+
+      &__profileImage {
+        width: 20rem;
+      }
+    }
   }
 }
