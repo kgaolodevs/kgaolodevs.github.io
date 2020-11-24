@@ -318,6 +318,48 @@ body {
     --h2-font-size: 2rem;
     --font-regular: 1rem;
   }
+
+  body {
+    margin: 0;
+  }
+
+  .site {
+    .section {
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+    }
+
+    .section-title {
+      margin-bottom: var(--m6);
+
+      &::after {
+        width: 80px;
+        top: 3rem;
+      }
+    }
+
+    .nav {
+      height: calc(var(--header-height) + 1rem);
+
+      &__menu--list {
+        display: flex;
+        padding-top: 0;
+      }
+
+      &__menu--item {
+        margin-left: var(--m6);
+        margin-bottom: 0;
+      }
+
+      &__menu--link {
+        color: var(--secondary-color);
+      }
+
+      &__menu--icon {
+        display: none;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {

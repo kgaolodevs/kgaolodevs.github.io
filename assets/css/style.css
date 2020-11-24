@@ -343,6 +343,39 @@ body img {
     --h2-font-size: 2rem;
     --font-regular: 1rem;
   }
+  body {
+    margin: 0;
+  }
+  .site .section {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+  .site .section-title {
+    margin-bottom: var(--m6);
+  }
+  .site .section-title::after {
+    width: 80px;
+    top: 3rem;
+  }
+  .site .nav {
+    height: calc(var(--header-height) + 1rem);
+  }
+  .site .nav__menu--list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0;
+  }
+  .site .nav__menu--item {
+    margin-left: var(--m6);
+    margin-bottom: 0;
+  }
+  .site .nav__menu--link {
+    color: var(--secondary-color);
+  }
+  .site .nav__menu--icon {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
