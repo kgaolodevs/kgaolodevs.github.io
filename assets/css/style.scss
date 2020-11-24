@@ -356,6 +356,10 @@ body {
           font-size: 2.2rem !important;
         }
       }
+
+      &__profileImage {
+        transform: scale(0.85);
+      }
     }
   }
 }

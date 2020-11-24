@@ -383,6 +383,10 @@ body img {
   .site .home__content--title {
     font-size: 2.2rem !important;
   }
+  .site .home__profileImage {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
 }
 
 @media screen and (min-width: 768px) {
