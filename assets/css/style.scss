@@ -4,12 +4,10 @@
 /* ////////// CSS VARIABLES /////////// */
 :root {
   /* Colors */
-  --primary-color: #4070f4;
-  --secondary-color: #0e2431;
-  /*
-    #242526
-    #18191A
-  */
+  --primary-color: #9739a0;
+  --white-color: #ffffff;
+  --dark: #242526;
+  --secondary-dark: #18191a;
 
   /* Fonts & Typography */
   --font-mid: 600;
@@ -51,7 +49,8 @@ body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--font-regular);
-  color: var(--secondary-color);
+  color: var(--white-color);
+  background-color: var(--secondary-dark);
 
   ul {
     list-style: none;
@@ -113,8 +112,8 @@ body {
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: #ffffff;
-    box-shadow: 0 0.5rem 2rem rgba(146, 161, 176, 0.15);
+    background-color: var(--dark);
+    box-shadow: 0 0.5rem 0.8rem rgba($color: #000000, $alpha: 0.4);
   }
 
   .nav {
@@ -130,7 +129,7 @@ body {
 
     &__menu--link {
       position: relative;
-      color: #ffffff;
+      color: var(--white-color);
 
       &:hover {
         position: relative;
@@ -148,11 +147,13 @@ body {
     }
 
     &__logo {
-      color: var(--secondary-color);
+      color: var(--white-color);
+      font-size: 2rem;
+      font-weight: bolder;
     }
 
     &__menu--icon {
-      color: var(--secondary-color);
+      color: var(--white-color);
       font-size: 1.5rem;
       cursor: pointer;
     }
@@ -181,6 +182,7 @@ body {
 
       &--title {
         font-size: var(--font-large);
+        color: var(--white-color);
       }
 
       &--subtitle {
@@ -191,7 +193,7 @@ body {
       &--button {
         display: inline-block;
         background-color: var(--primary-color);
-        color: #ffffff;
+        color: var(--white-color);
         padding: 0.75rem 2.5rem;
         font-weight: var(--font-mid);
         border-radius: 0.5rem;
@@ -206,6 +208,7 @@ body {
       width: 22.5rem;
       align-self: flex-end;
       img {
+        box-shadow: 0 0.5rem 0.8rem rgba($color: #000000, $alpha: 0.4);
         border-radius: 50%;
       }
     }
@@ -232,7 +235,9 @@ body {
       padding: 0.5rem 1rem;
       margin-bottom: var(--m4);
       border-radius: 0.5rem;
-      box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+      box-shadow: 0 0.5rem 0.8rem rgba($color: #000000, $alpha: 0.4);
+      background-color: var(--white-color);
+      color: var(--dark);
       img {
         width: 1.5rem;
       }
@@ -251,8 +256,9 @@ body {
     }
 
     &__project--img {
-      box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-      border-radius: 0.5rem;
+      box-shadow: 0 0.5rem 0.8rem rgba($color: #000000, $alpha: 0.4);
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
       overflow: hidden;
 
       img {
@@ -262,6 +268,34 @@ body {
         &:hover {
           transform: scale(1.1);
         }
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: stretch;
+
+      &--btn {
+        flex: 1;
+        border: none;
+        padding: 1rem 0;
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        font-weight: bolder;
+        font-size: 0.75rem;
+      }
+
+      &--demo {
+        border-bottom-left-radius: 0.5rem;
+      }
+
+      &--code {
+        border-left: var(--white-color) solid 1px;
+        border-right: var(--white-color) solid 1px;
+      }
+
+      &--info {
+        border-bottom-right-radius: 0.5rem;
       }
     }
   }
@@ -276,7 +310,7 @@ body {
     &__socials--icon {
       width: max-content;
       font-size: 1.4rem;
-      color: var(--secondary-color);
+      color: var(--white-color);
       margin-right: var(--m1);
 
       &:hover {
@@ -286,13 +320,13 @@ body {
 
     &__link {
       padding-bottom: var(--m1);
-      color: var(--primary-color);
+      color: var(--white-color);
     }
   }
 
   .footer {
-    background-color: var(--secondary-color);
-    color: #ffffff;
+    background-color: var(--dark);
+    color: var(--dark);
     text-align: center;
     padding: 2rem 0;
 
@@ -301,13 +335,14 @@ body {
 
       a {
         text-decoration: none;
-        color: #ffffff;
+        color: var(--white-color);
         margin: 0 0.5rem;
       }
     }
 
     &__copyright {
       font-size: 0.7rem;
+      color: var(--white-color);
     }
   }
 }
@@ -365,7 +400,7 @@ body {
       }
 
       &__menu--link {
-        color: var(--secondary-color);
+        color: var(--white-color);
       }
 
       &__menu--icon {
@@ -432,8 +467,11 @@ body {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-dark);
     transition: 0.5s;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    box-shadow: 0 0.5rem 0.8rem rgba($color: #ffffff, $alpha: 0.1);
   }
 
   .site {
