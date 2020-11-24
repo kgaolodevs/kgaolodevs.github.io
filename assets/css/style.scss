@@ -412,7 +412,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
     top: var(--header-height);
@@ -422,6 +422,26 @@ body {
     padding: 2rem;
     background-color: var(--secondary-color);
     transition: 0.5s;
+  }
+
+  .site {
+    .home {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &__profileImage {
+        align-self: center;
+      }
+    }
   }
 }
 
